@@ -3,6 +3,7 @@
 @import url("./page-login.css");
 @import url("./dark.css");
 @import url("./modalConfirma.css");
+@import url("./responsive.css");
 
 :root {
     --body-bg: #fafafa;
