@@ -1,5 +1,4 @@
-@media (max-width:700px) {
-
+@media (max-width: 414px) {
     .left-login {
         display: none;
     }
@@ -16,52 +15,4 @@
         right: 0;
         top: 2.5em;
     }
-}
-
-@media (max-width:1000px) {
-
-    .imagem-bg {
-        width: 400px;
-    }
-
-    .right-login {
-        width: 50vw;
-    }
-
-    .card-login {
-        width: 87%
-    }
-
-    .mudarTema {
-        right: 0;
-        top: 2.5em;
-    }
-
-    h1 {
-        display: none;
-    }
-}
-
-
-
-@media (max-width:1125px) {
-
-    .imagem-bg {
-        width: 400px;
-    }
-
-    .right-login {
-        width: 50vw;
-    }
-
-    .card-login {
-        width: 90%
-    }
-
-    .mudarTema {
-        right: 0;
-        top: 2.5em;
-    }
-
-   
 }
