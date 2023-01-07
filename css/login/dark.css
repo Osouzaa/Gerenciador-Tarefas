@@ -1,11 +1,13 @@
 .mudarTema {
     position: absolute;
     top: 2em;
-    right: 1em;
+    right: 2em;
+    height: 36px;
+    width: 30px;
     cursor: pointer;
     background-image: var(--icon-dark);
     background-repeat: no-repeat;
-    padding: 3em;
+    
 }
 
 #buttonDark {
