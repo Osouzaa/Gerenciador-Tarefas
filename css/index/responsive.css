@@ -1,65 +1,81 @@
-@media (max-width: 768px) {
+@media (max-width: 414px) {
 
-    .edit-table {
-        margin-left: 5em;
+
+    .div-test,
+    .ret-2 {
+        width: 13px;
     }
 
-    .header {
-        font-size: 12px;
-    }
-
-    #t-body th {
-        font-size: 12px;
-    }
-
-    #t-body td {
-        font-size: 12px;
-    }
 
     .image {
         top: 1.5em;
-        left: 6em;
-        margin-bottom: 3em;
+        left: 3em;
+        margin-bottom: 1.5em;
     }
 
-    .manager {
-        margin-left: 6em;
-    }
-
-    #btn-manager {
-        margin-left: 6em;
+    .ret-yellow {
+        display: none;
     }
 
     .mudarTema {
-        right: 5em;
+        top: 1.5em;
+        right: 2em;
+        height: 36px;
+        width: 30px;
+        padding: 0 !important;
     }
 
-    .modal-container {
-        height: 500px;
-        width: 400px;
-        margin: 20% 20%;
+    #task-manager {
+        margin-bottom: 5px;
+        font-size: 16px;
     }
 
-    #date {
-        width: 200px;
-    }
-    
-    #select{
-        width: 200px;
+    .manager {
+        margin-left: 50px;
+        margin-bottom: .8em;
     }
 
-    #btt-save {
-        position: relative;
-        top: 42px;
-        left: 200px;
-        width: 100px;
+    #btn-manager {
+        margin-left: 45px;
     }
 
-    #cancel-link {
-        top: 15px;
-
+    .edit-table {
+        margin: 12px 26px;
+        width: 50vw;
     }
 
+   .modal-container {
+    width: 400px;
+    height: 600px;
+    margin: 35% auto;
+   }
    
-}
+   #date {
+    width: 50vw;
+   }
 
+   #select  {
+    width: 50vw;
+   }
+
+  #btt-save {
+    left: 200px;
+    top: 120px;
+  }
+
+  #cancel-link {
+    top: 90px;
+    left: 23px;
+  }
+
+  .modal-container-two {
+    width: 405px;
+    height: 300px;
+    margin: 50% auto;
+  }
+
+  .aviso p {
+    margin-bottom: 1.5em;
+    font-size: 20px;
+  }
+}
