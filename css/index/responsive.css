@@ -47,7 +47,7 @@
    .modal-container {
     width: 400px;
     height: 600px;
-    margin: 25% auto;
+    margin: 10% auto;
    }
    
    #date {
@@ -71,7 +71,7 @@
   .modal-container-two {
     width: 405px;
     height: 300px;
-    margin: 25% auto;
+    margin: 10% auto;
   }
 
   .aviso p {
