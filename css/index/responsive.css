@@ -88,5 +88,8 @@
     .table>tbody {
         vertical-align: middle;
     }
-
+    
+    tr {
+        font-size: 15px;
+    }
 }
