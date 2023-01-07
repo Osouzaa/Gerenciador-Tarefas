@@ -18,6 +18,8 @@
 }
 
 
+
+
 @media (max-width: 820px) {
 
     .right-login {
@@ -38,3 +40,25 @@
         display: none;
     }
 }
+
+
+@media (max-width: 850px) {
+
+    .right-login {
+        width: 90vw;
+    }
+
+    .card-login {
+        width: 90%
+    }
+
+    .mudarTema {
+        right: 0;
+        top: 2.5em;
+
+    }
+
+    
+}
+
+
