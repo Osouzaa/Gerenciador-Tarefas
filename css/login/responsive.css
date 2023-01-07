@@ -15,6 +15,15 @@
         right: 0;
         top: 2.5em;
     }
+
+    .modal-container {
+        width: 393px;
+        height: 297px;
+        border-radius: 6px;
+        margin: 50% auto;
+    }
+
+
 }
 
 
