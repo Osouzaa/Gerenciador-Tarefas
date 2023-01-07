@@ -23,7 +23,7 @@
     --input-bg:  rgba(61, 0, 111, 0.21);
     --box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     --backdrop: blur(5px);
-    --input-color: #111212de;
+     --input-color: #fafafade;
     --logo-arnia: url("../../img/index/images.png");
     
 }
