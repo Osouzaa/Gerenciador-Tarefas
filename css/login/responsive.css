@@ -16,3 +16,25 @@
         top: 2.5em;
     }
 }
+
+
+@media (max-width: 820px) {
+
+    .right-login {
+        width: 100vw;
+    }
+
+    .card-login {
+        width: 90%
+    }
+
+    .mudarTema {
+        right: 0;
+        top: 2.5em;
+
+    }
+
+    h1 {
+        display: none;
+    }
+}
