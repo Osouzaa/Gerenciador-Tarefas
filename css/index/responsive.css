@@ -44,41 +44,44 @@
         width: 50vw;
     }
 
-   .modal-container {
-    width: 400px;
-    height: 600px;
-    margin: 10% auto;
-   }
-   
-   #date {
-    width: 50vw;
-   }
+    .modal-container {
+        width: 400px;
+        height: 600px;
+        margin: 25% auto;
+    }
 
-   #select  {
-    width: 50vw;
-   }
+    #date {
+        width: 50vw;
+    }
 
-  #btt-save {
-    left: 200px;
-    top: 120px;
-  }
+    #select {
+        width: 50vw;
+    }
 
-  #cancel-link {
-    top: 90px;
-    left: 23px;
-  }
+    #btt-save {
+        left: 200px;
+        top: 120px;
+    }
 
-  .modal-container-two {
-    width: 405px;
-    height: 300px;
-    margin: 10% auto;
-  }
+    #cancel-link {
+        top: 90px;
+        left: 23px;
+    }
 
-  .aviso p {
-    margin-bottom: 1.5em;
-    font-size: 20px;
-  }
+    .modal-container-two {
+        width: 393px;
+        height: 297px;
+        border-radius: 6px;
+        margin: 50% auto;
+
+    }
+
+    .aviso p {
+        margin-bottom: .5em;
+        font-size: 20px;
+    }
+
     .exit-account {
-    left: 0;
-  }
+        left: 0;
+    }
 }
