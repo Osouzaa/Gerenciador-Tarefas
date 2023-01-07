@@ -84,4 +84,9 @@
     .exit-account {
         left: 0;
     }
+    
+    .table>tbody {
+        vertical-align: middle;
+    }
+
 }
