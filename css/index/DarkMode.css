@@ -29,9 +29,7 @@
 }
 
 
-.control {
-    color: var(--input-color);
-}
+
 
 .modal-container-two {
     background-color: var(--modal-bg);
