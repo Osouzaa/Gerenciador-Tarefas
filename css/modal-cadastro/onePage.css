@@ -125,6 +125,7 @@
 
     body {
         padding: 0 !important;
+        min-height:93vh;
     }
 
     .label-form {
