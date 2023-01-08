@@ -133,4 +133,8 @@
     .label-form {
         font-size: 12px;
     }
+    
+    .senha {
+        width: 100%; 
+    }
 }
