@@ -71,7 +71,7 @@
     font-size: 15px;
     color: var(--label-color);
     transition: all 0.4s ease;
-    border-radius: 8px;
+   
 }
 
 .input-group input:focus {
