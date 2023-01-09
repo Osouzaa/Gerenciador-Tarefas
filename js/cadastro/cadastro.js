@@ -1,5 +1,23 @@
 const form = document.getElementById("form-cadastro");
+const modal = document.querySelector(".modal");
 
+
+const openModal = () => {
+  modal.style.display = "block";
+  setTimeout(() => {
+    voltarPage();
+  }, 2000);
+};
+
+const closeModal = () => {
+  modal.style.display = "none";
+};
+
+function voltarPage() {
+  setTimeout(() => {
+    location.href = "../index.html";
+  }, 1000);
+}
 
 const salvarLogin = async (login) => {
   await fetch("https://meu-json-server.vercel.app/login", {
