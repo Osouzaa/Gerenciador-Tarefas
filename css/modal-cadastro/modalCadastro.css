@@ -53,6 +53,7 @@
     z-index: 1;
 }
 
+
 @media (max-width : 414px) {
     .modal-container {
         width: 410px;
