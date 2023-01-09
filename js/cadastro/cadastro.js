@@ -40,5 +40,7 @@ if (form) {
     const confirm = form.elements["confirm-senha"].value.trim();
 
     addLogin({ login, email, senha, confirm });
+    
+    openModal();
   });
 }
