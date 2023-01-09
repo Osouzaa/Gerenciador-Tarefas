@@ -56,7 +56,9 @@
 
 @media (max-width : 414px) {
     .modal-container {
-        width: 410px;
+        width: 393px;
+        height: 297px;
+        border-radius: 6px;
         margin: 50% auto;
     }
 
