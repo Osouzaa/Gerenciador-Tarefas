@@ -9,6 +9,7 @@
 
     <script src="../js/cadastro/cadastro.js" defer></script>
     <script src="../js/cadastro/validandoCadastro.js" defer></script>
+    
     <title>Cadastro</title>
   </head>
   <body>
@@ -27,20 +28,23 @@
         </p>
           <h4 id="msgError"></h4>
 
-        <form action="#" id="form-cadastro">
+        <form action="#" id="form-cadastro" >
           <section class="input-group">
             <label for="name" class="label-form">Login</label>
-            <input type="text" name="name" id="name" class="input" required />
+            <input type="text" name="name" id="name" class="input" minlength="5" onchange="validandoCadastro()"/>
+            <small></small>
           </section>
 
           <section class="input-group">
             <label for="email" class="label-form">E-mail</label>
-            <input type="email" name="email" id="email" class="input" required/>
+            <input type="email" name="email" id="email" class="input" onchange="validandoCadastro()"/>
+            <small></small>
           </section>
 
           <section class="input-group senha">
             <label for="senha" class="label-form">Senha</label>
-            <input type="password" name="senha" id="senha" class="input"  required onchange="validandoCadastro()" minlength="5" />
+            <input type="password" name="senha" id="senha" class="input"  minlength = "8" />
+            
           </section>
 
           <section class="input-group senha">
@@ -52,17 +56,33 @@
               name="confirm-senha"
               id="confirm-senha"
               class="input"
+              minlength = "8"
               onchange="validandoCadastro()"
-              minlength="5"
+
             />
+            <small class="pass"></small>
           </section>
 
           <div class="input-group">
-            <button disabled id="btt-cadastrar">Cadastrar</button>
+            <button   disabled id="btt-cadastrar" >Cadastrar</button>
           </div>
         </form>
       </div>
     </div>
+    </div>
+
+    <div id="modal" class="modal">
+      <div class="modal-container">
+        <div class="content-modal">
+          <div class="title">
+            <h3>Cadastrado com Sucesso!</h3>
+          </div>
+          <div class="text">
+            <p>Seja bem vindo ao nosso time! </p>
+            <img src="../img/cadastro/animation-cadastro.svg" alt="Animação de boas vindas ao time">
+          </div>
+        </div>
+      </div>
     </div>
 
     
