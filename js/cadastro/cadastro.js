@@ -38,15 +38,7 @@ const salvarLogin = async (login) => {
 
 const addLogin = async (login) => {
   await salvarLogin(login);
-  document.getElementById("msgError").innerHTML = "Cadastrado com Sucesso!";
-  voltarPage();
 };
-
-function voltarPage() {
-  setTimeout(() => {
-    location.href = "../index.html";
-  }, 2000);
-}
 
 if (form) {
   form.addEventListener("submit", (event) => {
