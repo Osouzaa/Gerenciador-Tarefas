@@ -1,5 +1,5 @@
 .modal {
-    display: none;
+    display: block;
     position: fixed;
     z-index: 1;
     left: 0;
@@ -62,5 +62,14 @@
         margin: 50% auto;
     }
 
+    .text img {
+        width: 150px;
+        padding-top: 2em;
+    }
+
+    .text p {
+        font-size: 18px;
+       padding-top: 4em;
+    }
 
 }
