@@ -26,7 +26,7 @@ const logar = async () => {
   } else if (persons.length == 1 && senha.length == 0) {
     document.getElementById("msgError").innerHTML =
       "Senha incorreta!";
-    border_User.classList.add("has-error");
+    border_User.classList.remove("has-error");
     border_Senha.classList.add("has-error");
   } else if (persons.length == 0 && senha.length == 0) {
     document.getElementById("msgError").innerHTML =
