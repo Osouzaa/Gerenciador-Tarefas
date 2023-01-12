@@ -18,12 +18,25 @@ const logar = async () => {
 
   if (persons.length == 1 && senha.length == 1) {
     location.href = "pages/tarefas.html";
-  } else {
+  } else if (persons.length == 0 && senha.length == 1) {
     document.getElementById("msgError").innerHTML =
-      "Usuario ou senha incorreta!";
+      "Usuario não encontrado!";
+    border_User.classList.add("has-error");
+    border_Senha.classList.add("has-error");
+  } else if (persons.length == 1 && senha.length == 0) {
+    document.getElementById("msgError").innerHTML =
+      "Senha incorreta!";
+    border_User.classList.add("has-error");
+    border_Senha.classList.add("has-error");
+  } else if (persons.length == 0 && senha.length == 0) {
+    document.getElementById("msgError").innerHTML =
+      "Usuario não encontrado!";
     border_User.classList.add("has-error");
     border_Senha.classList.add("has-error");
   }
+
+  console.log(persons);
+  console.log(senha);
 };
 
 const validandoUser = () => {
