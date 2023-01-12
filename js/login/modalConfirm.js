@@ -19,5 +19,5 @@ window.addEventListener("click", (event) => {
 
 setTimeout (() =>{
   closeModal ()
-}, 5000)
+}, 3000)
 
