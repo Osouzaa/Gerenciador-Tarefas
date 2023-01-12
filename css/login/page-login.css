@@ -149,6 +149,8 @@
 }
 
 #msgError {
-    color: red;
-    text-decoration: underline;
+    color: #FF4A4A;
+    font-weight: 400;
+    font-size: 15px;
+   
 }
