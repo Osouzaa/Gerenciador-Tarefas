@@ -3,6 +3,9 @@ const X = document.getElementById("time");
 
 const openModal = () => {
   modalConfirm.style.display = "block";
+  setTimeout (() =>{
+  closeModal ()
+}, 3000)
 
   
 };
@@ -17,7 +20,4 @@ window.addEventListener("click", (event) => {
   }
 });
 
-setTimeout (() =>{
-  closeModal ()
-}, 3000)
 
