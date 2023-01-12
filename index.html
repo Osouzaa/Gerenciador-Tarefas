@@ -34,6 +34,7 @@
               placeholder="Usuário"
               id="usuario"
               required
+              onblur="validandoUser()"
             />
           </div>
           <div class="textfield">
@@ -44,6 +45,7 @@
               placeholder="Senha"
               class="senha"
               id="senha"
+              onblur="validandoUser()"
               required
             />
             <a href="#" class="login-senha" onclick="openModal()"
