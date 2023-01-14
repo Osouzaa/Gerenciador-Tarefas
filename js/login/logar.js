@@ -35,8 +35,6 @@ const logar = async () => {
     border_Senha.classList.add("has-error");
   }
 
-  console.log(persons);
-  console.log(senha);
 };
 
 const validandoUser = () => {
