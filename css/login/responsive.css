@@ -1,27 +1,28 @@
-@media (max-width: 414px) {
+@media  (max-width: 414px) {
     .left-login {
-        display: none;
+        display: none !important;
     }
 
     .right-login {
-        width: 100vw;
+        width: 100vw !important;
     }
 
     .card-login {
-        width: 90%
+        width: 90% !important;
     }
 
     .mudarTema {
-        right: 2em;
-        top: 2.5em;
+        right: 2em !important;
+        top: 1.5em !important;
     }
 
     .modal-container {
-        width: 393px;
-        height: 297px;
-        border-radius: 6px;
-        margin: 50% auto;
+        width: 393px !important;
+        height: 297px !important;
+        border-radius: 6px !important;
+        margin: 50% auto !important;
     }
+
 
 
 }
@@ -67,8 +68,10 @@
 
     }
 
-    
+
 }
+
+
 @media (max-width: 540px) {
     .left-login {
         display: none;
@@ -101,5 +104,3 @@
         width: 55vw;
     }
 }
-
-
