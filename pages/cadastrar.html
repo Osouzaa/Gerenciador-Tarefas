@@ -30,21 +30,21 @@
 
         <form action="#" id="form-cadastro" >
           <section class="input-group">
-            <label for="name" class="label-form">Usuário</label>
-            <input type="text" name="name" id="name" class="input" minlength="5" onchange="validandoCadastro()"/>
+            <label for="name" class="label-form">Usuario</label>
+            <input type="text" name="name" id="name" class="input" minlength="5" required onchange="validaUser()"/>
             <small></small>
           </section>
 
           <section class="input-group">
             <label for="email" class="label-form">E-mail</label>
-            <input type="email" name="email" id="email" class="input" onchange="validandoCadastro()"/>
+            <input type="email" name="email" id="email" class="input" required onchange="validaUser()"/>
             <small></small>
           </section>
 
           <section class="input-group senha">
             <label for="senha" class="label-form">Senha</label>
-            <input type="password" name="senha" id="senha" class="input"  minlength = "8" />
-            
+            <input type="password" name="senha" id="senha" class="input"  minlength = "8"  required/>
+            <small></small>
           </section>
 
           <section class="input-group senha">
@@ -57,14 +57,14 @@
               id="confirm-senha"
               class="input"
               minlength = "8"
-              onchange="validandoCadastro()"
-
+              required
+              onblur="validaSenha()"
             />
-            <small class="pass"></small>
           </section>
+          <span id = "validacaoSenha"></span>
 
           <div class="input-group">
-            <button   disabled id="btt-cadastrar" >Cadastrar</button>
+            <button  id="btt-cadastrar" >Cadastrar</button>
           </div>
         </form>
       </div>
