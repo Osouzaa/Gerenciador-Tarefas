@@ -31,10 +31,10 @@ const validaUser = async () => {
 
   if (user.length > 0) {
     document.querySelector("#validacaoSenha").innerText =
-      "Usuario já esta sendo usado";
+      "Este usario já esta sendo utilizado!";
     document.getElementById("btt-cadastrar").disabled = true;
   } else if (endereço.length > 0) {
-    document.querySelector("#validacaoSenha").innerText = "Email já cadastrado";
+    document.querySelector("#validacaoSenha").innerText = "Email já cadastrado!";
     document.getElementById("btt-cadastrar").disabled = true;
   } else {
     document.querySelector("#validacaoSenha").innerText = "";
