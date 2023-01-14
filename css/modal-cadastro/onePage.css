@@ -102,19 +102,16 @@
     display: none;
 }
 
-#msgError {
-    text-align: center;
-    color: #000000;
-    text-decoration: underline;
-    font-weight: 700;
-}
-
-
 #validacaoSenha {
     color: #FF4A4A;
     font-weight: 400;
     font-size: 15px;
-    margin-left: 4.7em;
+}
+
+.msg-info {
+    display: flex;
+    width: 100%;
+    justify-content: center;
 }
 
 
