@@ -28,8 +28,6 @@ const validaUser = async () => {
     return user.email === email;
   });
 
-  console.log(user);
-  console.log(endereço);
 
   if (user.length > 0) {
     document.querySelector("#validacaoSenha").innerText =
