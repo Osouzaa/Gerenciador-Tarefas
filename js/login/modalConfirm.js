@@ -11,11 +11,6 @@ const closeModal = () => {
   limpaCampo()
 };
 
-window.addEventListener("click", (event) => {
-  if (event.target === modalConfirm) {
-    closeModal();
-  }
-});
 
 
 const limpaCampo = () => {
