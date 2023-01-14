@@ -3,11 +3,12 @@ const X = document.getElementById("time");
 
 const openModal = () => {
   modalConfirm.style.display = "block";
-  
 };
 
 const closeModal = () => {
   modalConfirm.style.display = "none";
+
+  limpaCampo()
 };
 
 window.addEventListener("click", (event) => {
@@ -17,3 +18,7 @@ window.addEventListener("click", (event) => {
 });
 
 
+const limpaCampo = () => {
+  document.getElementById('email').value = ""
+  document.getElementById("senha-rec").innerHTML = ""
+}
