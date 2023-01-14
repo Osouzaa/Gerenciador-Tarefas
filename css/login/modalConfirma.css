@@ -15,7 +15,7 @@
     background-color: var(--body-bg);
     border: 1px solid rgb(255, 255, 255);
     margin: 10% auto;
-    height: 290px;
+    height: 296px;
     width: 500px;
     padding: 20px;
 
@@ -89,7 +89,7 @@
 .btn-recuperacao button{
     width: 90%;
     padding: 1.3em 0em;
-    margin-top: 3em;
+    margin-top: 1em;
     border: none;
     border-radius: 8px;
     outline: none;
