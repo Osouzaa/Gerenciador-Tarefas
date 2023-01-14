@@ -16,9 +16,9 @@ const logar = async () => {
     return perso.senha === password;
   });
 
-  if (persons.length == 1 && senha.length == 1) {
+  if (persons.length == 1 && senha.length > 0) {
     location.href = "pages/tarefas.html";
-  } else if (persons.length == 0 && senha.length == 1) {
+  } else if (persons.length == 0 && senha.length > 0) {
     document.getElementById("msgError").innerHTML =
       "Usuario não encontrado!";
     border_User.classList.add("has-error");
