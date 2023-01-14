@@ -18,11 +18,14 @@
 
     .modal-container {
         width: 393px !important;
-        height: 297px !important;
+        height: 325px !important;
         border-radius: 6px !important;
         margin: 50% auto !important;
     }
 
+    .btn-recuperacao button {
+        margin-top: 3em;
+    }
 
 
 }
