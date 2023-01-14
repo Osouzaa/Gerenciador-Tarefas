@@ -71,5 +71,8 @@
         font-size: 18px;
        padding-top: 3em;
     }
+    .senha {
+        width: 100%;
+    }
 
 }
