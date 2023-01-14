@@ -89,7 +89,7 @@
 .btn-recuperacao button{
     width: 90%;
     padding: 1.3em 0em;
-    margin: 1.5em ;
+    margin: .5em ;
     border: none;
     border-radius: 8px;
     outline: none;
@@ -103,4 +103,12 @@
     text-align: center;
     text-decoration: none;
 
+}
+
+
+#senha-rec {
+    color: #FF4A4A;
+    font-weight: 500;
+    font-size: 15px;
+    text-decoration: underline;
 }
