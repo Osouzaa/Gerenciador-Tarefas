@@ -69,5 +69,37 @@
 
     
 }
+@media (max-width: 540px) {
+    .left-login {
+        display: none;
+    }
+
+    .right-login {
+        width: 75vw;
+    }
+
+    .modal-container {
+        margin: 38% auto;
+    }
+}
+
+@media (max-width: 896px) {
+    .left-login>h1 {
+        font-size: 23px;
+    }
+
+    .imagem-bg {
+        width: 250px;
+    }
+
+    .main-logo {
+        top: 1em;
+        left: 2em;
+    }
+    .right-login {
+        margin-top: 2em;
+        width: 55vw;
+    }
+}
 
 
