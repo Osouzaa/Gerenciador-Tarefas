@@ -1,16 +1,47 @@
-const validandoCadastro = () => {
-  const login = document.getElementById("name").value;
-  const email = document.getElementById("email").value;
-  const senha = document.getElementById("senha").value;
-  const confirmarSenha = document.getElementById("confirm-senha").value;
-  const msgUser = document.getElementById('user')
+const validaSenha = () => {
+  const senha = document.getElementById("senha").value.trim();
+  const confirmSenha = document.getElementById("confirm-senha").value.trim();
 
-  if (login !== "" && email !== "" && senha !== "" && confirmarSenha !== "") {
+  if (senha !== confirmSenha) {
+    document.querySelector("#validacaoSenha").innerText =
+      "As senhas devem ser iguais!";
+    document.getElementById("btt-cadastrar").disabled = true;
+  } else {
+    document.querySelector("#validacaoSenha").innerText = "";
     document.getElementById("btt-cadastrar").disabled = false;
-    return;
   }
-  document.getElementById("btt-cadastrar").disabled = true;
+};
 
-  msgUser.innerHTML = login
-  
+const validaUser = async () => {
+  const login = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const msgUser = document.getElementById("user");
+
+  const apiResponse = await fetch("http://localhost:3000/login");
+  const users = await apiResponse.json();
+
+  let user = users.filter((user) => {
+    return user.login === login;
+  });
+
+  let endereço = users.filter((user) => {
+    return user.email === email;
+  });
+
+  console.log(user);
+  console.log(endereço);
+
+  if (user.length > 0) {
+    document.querySelector("#validacaoSenha").innerText =
+      "Usuario já esta sendo usado";
+    document.getElementById("btt-cadastrar").disabled = true;
+  } else if (endereço.length > 0) {
+    document.querySelector("#validacaoSenha").innerText = "Email já cadastrado";
+    document.getElementById("btt-cadastrar").disabled = true;
+  } else {
+    document.querySelector("#validacaoSenha").innerText = "";
+    document.getElementById("btt-cadastrar").disabled = false;
+  }
+
+  msgUser.innerHTML = login;
 };
