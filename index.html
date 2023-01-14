@@ -9,6 +9,7 @@
     <script src="js/index/DarkMode.js" defer></script>
     <script src="js/login/logar.js" defer></script>
     <script src="js/login/modalConfirm.js" defer></script>
+    <script src="js/login/recuperar-senha.js" defer></script>
     <title>login</title>
   </head>
   <body>
@@ -81,8 +82,7 @@
             <span id="time" onclick="closeModal()">&times;</span>
           </div>
           <div class="msg">
-            Vamos lhe enviar um e-mail com mais informações sobre como redefinir
-            sua senha.
+            Digite seu e-mail abaixo para pesquisarmos sua senha.
           </div>
           <div class="input-email">
             <input
@@ -90,10 +90,12 @@
               name="email"
               id="email"
               placeholder="Digite seu email"
+              required
             />
           </div>
+          <div id="senha-rec"></div>
           <div class="btn-recuperacao">
-            <button>Enviar</button>
+            <button onclick="validaUser()">Enviar</button>
           </div>
         </div>
       </div>
