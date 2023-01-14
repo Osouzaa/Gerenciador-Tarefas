@@ -5,7 +5,7 @@ const logar = async () => {
   const border_Senha = document.getElementById("senha");
   const border_User = document.getElementById("usuario");
 
-  const apiResponse = await fetch("http://localhost:3000/login");
+  const apiResponse = await fetch("https://meu-json-server.vercel.app/login");
   const users = await apiResponse.json();
 
   let persons = users.filter((perso) => {
