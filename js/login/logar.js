@@ -30,7 +30,7 @@ const logar = async () => {
     border_Senha.classList.add("has-error");
   } else if (persons.length == 0 && senha.length == 0) {
     document.getElementById("msgError").innerHTML =
-      "Usuario não encontrado!";
+      "Usuario não cadastrado!";
     border_User.classList.add("has-error");
     border_Senha.classList.add("has-error");
   }
