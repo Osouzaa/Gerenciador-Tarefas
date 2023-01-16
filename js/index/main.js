@@ -18,6 +18,7 @@ const closeModal = () => {
   document.getElementById("date").value = "";
   document.getElementById("select").value = "Option";
   document.getElementById("btt-save").disabled = true;
+  changeTitleOring();
 };
 
 window.addEventListener("click", (event) => {
@@ -115,10 +116,20 @@ const editTasks = async (id) => {
   document.getElementById("date").value = editManager.data;
   document.getElementById("select").value = editManager.selecao;
   document.getElementById("btt-save").disabled = false;
-
+  
+  changeTitle();
   openModal();
 };
 
+
+
+const changeTitle = () => {
+  document.getElementById('title-form').innerHTML = 'Editar Tarefa'
+}
+
+const changeTitleOring = () => {
+  document.getElementById('title-form').innerHTML = 'Adicionar nova Tarefa'
+}
 const addTasks = async (task) => {
   await fetch("https://meu-json-server.vercel.app/tasks", {
     method: "POST",
